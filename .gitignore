@@ -2,3 +2,4 @@
 *.out
 clienttest.c
 servertest.c
+.gitignore
