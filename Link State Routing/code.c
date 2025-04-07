@@ -9,8 +9,8 @@ void main() {
     scanf("%d", &numLinks);
     int matrix[numNodes + 1][numNodes + 1], dist[numNodes + 1], visited[numNodes + 1];
 
-    for (int i = 0; i <= numNodes; i++) {
-        for (int j = 0; j <= numNodes; j++) {
+    for (int i = 1; i <= numNodes; i++) {
+        for (int j = 1; j <= numNodes; j++) {
             matrix[i][j] = 0; // Initialize adjacency matrix to 0
         }
         dist[i] = INT_MAX; // Initialize distances
@@ -18,7 +18,7 @@ void main() {
     }
 
     printf("Enter the links (node1 node2 cost):\n");
-    for (int i = 0; i < numLinks; i++) {
+    for (int i = 1; i <= numLinks; i++) {
         int node1, node2, cost;
         scanf("%d %d %d", &node1, &node2, &cost);
         matrix[node1][node2] = cost;
